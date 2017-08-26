@@ -11,14 +11,14 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-public class SigninInteractorImpl implements SigninContract.SigninInteractor {
+public class InteractorImpl implements SigninContract.Interactor {
     private String TAG = getClass().getSimpleName();
 
     private FirebaseAuth mAuth;
 
     private OnSigninFinishedListener mLoginFinishedListener;
 
-    public SigninInteractorImpl(OnSigninFinishedListener loginFinishedListener) {
+    public InteractorImpl(OnSigninFinishedListener loginFinishedListener) {
         mLoginFinishedListener = loginFinishedListener;
     }
 

@@ -12,12 +12,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.vongochanh.chatapp.R;
 import com.vongochanh.chatapp.home.search_user.SearchingUserActivity;
 import com.vongochanh.chatapp.start.signin.SigninActivity;
+
 
 public class HomeActivity extends AppCompatActivity implements HomeContract.View {
     private HomeContract.Presenter mPresenter;

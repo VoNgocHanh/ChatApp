@@ -12,5 +12,4 @@ public class Constant {
     public final static String USER_EMAIL_NODE = "emailUser";
     public final static String USER_ICON_LINK_NODE = "userIconLink";
 
-
 }

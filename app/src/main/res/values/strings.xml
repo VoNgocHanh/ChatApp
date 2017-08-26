@@ -19,10 +19,10 @@
 
     <string name="connected_state">Already connect to internet</string>
     <string name="unconnected_state">Unable connect to internet</string>
-    <string name="connected_by_wifi">You are connected by wifi</string>
-    <string name="connected_by_mobile_data">You are connected by mobile data. Be ware!</string>
-    <string name="connected_by_ethernet">You are connected by ethernet</string>
-    <string name="connected_by_wimax">You are connected by wimax</string>
+    <string name="connected_by_wifi">You are connecting by wifi</string>
+    <string name="connected_by_mobile_data">You are connecting by mobile data. Be ware!</string>
+    <string name="connected_by_ethernet">You are connecting by ethernet</string>
+    <string name="connected_by_wimax">You are connecting by wimax</string>
 
     <!--SIGNIN ACTIVITY-->
     <string name="signin">SIGNIN</string>

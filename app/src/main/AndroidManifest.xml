@@ -18,9 +18,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <receiver
+            android:name=".connection.NetworkChangeManager"
+            android:label="NetworkChangeReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
         <activity
             android:name=".start.signin.SigninActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +39,7 @@
         </activity>
         <activity
             android:name=".start.signin.forgot_password.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
             android:label="@string/forgot_password"
             android:parentActivityName=".start.signin.SigninActivity">
             <meta-data
@@ -37,11 +48,12 @@
         </activity>
         <activity
             android:name=".start.sign_up.SignupActivity"
-            android:launchMode="singleTask" />
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".room.list_rooms.RoomsListActivity"
             android:launchMode="singleTask" />
-        <activity android:name=".room.chat_room.Activity" />
+        <activity android:name=".room.chat_room.ChatRoomActivity" />
 
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".home.search_user.SearchingUserActivity"
