@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "980046664660",
+    "firebase_url": "https://chatapp-d6c8a.firebaseio.com",
+    "project_id": "chatapp-d6c8a",
+    "storage_bucket": "chatapp-d6c8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980046664660:android:95b2cf64afba07ec",
+        "android_client_info": {
+          "package_name": "com.vongochanh.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980046664660-hgsu60bbvvnr8fgml2freghv1ebtgucp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4VY75plRe6RmGgqxKXuo167hbISFcEtw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

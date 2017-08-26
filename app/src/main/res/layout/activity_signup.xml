@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/purple_300"
+    tools:context=".start.sign_up.SignupActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="16dip" android:paddingEnd="16dip"
+        android:paddingTop="10dip" android:paddingBottom="10dip">
+
+        <ImageView
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/ic_signup"
+            android:layout_gravity="center_horizontal"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:theme="@style/EditTextHint"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/emailUser_signup"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/FieldSignupStyle"
+                android:hint="@string/your_email"
+                android:drawableStart="@drawable/ic_account"
+                android:drawablePadding="10dip"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dip"
+            android:theme="@style/EditTextHint"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password_signup"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                style="@style/FieldSignupStyle"
+                android:inputType="textPassword" android:hint="@string/password"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dip"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="20dip"
+            android:theme="@style/EditTextHint"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/confirmPassword_signup"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                style="@style/FieldSignupStyle"
+                android:hint="@string/confirm_password"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dip"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/submit_signup"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:textSize="16sp" android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/create_account"
+            android:background="@drawable/signup_button"/>
+
+        <TextView
+            android:id="@+id/signin_link"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textSize="13sp" android:textColor="@android:color/white"
+            android:gravity="center"
+            android:text="@string/link_signin"/>
+
+    </LinearLayout>
+
+</ScrollView>

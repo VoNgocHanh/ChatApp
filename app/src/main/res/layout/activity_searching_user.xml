@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    tools:context="com.vongochanh.chatapp.home.search_user.SearchingUserActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_searchingUserAct"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/blue_600">
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/search_user_field"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/search_user_button"
+                android:textColor="@android:color/white"
+                android:hint="@string/search_user" android:textColorHint="@color/gray_100"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:id="@+id/search_user_button"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dip" android:layout_marginEnd="10dip"
+                android:background="@drawable/ic_search_user_button"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_finding_user"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginTop="10dip"
+        android:paddingStart="10dip" android:paddingEnd="10dip"
+        android:animateLayoutChanges="false" android:animationCache="false"
+        android:nestedScrollingEnabled="false"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_searching_user"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

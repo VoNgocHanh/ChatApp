@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dip" android:paddingRight="10dip">
+
+    <TextView
+        android:id="@+id/emailUserField_item"
+        android:layout_width="150dip" android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/contentMessageField_item"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="14sp" android:gravity="right|center_vertical"
+        android:layout_toRightOf="@+id/emailUserField_item"
+        android:layout_alignParentRight="true" android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/timeMessageField_item"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:layout_below="@+id/contentMessageField_item"
+        android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
