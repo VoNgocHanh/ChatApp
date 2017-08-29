@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context="com.vongochanh.chatapp.home.search_user.SearchingUserActivity">
+    tools:context=".ui.home.search_user.SearchingUserActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_searchingUserAct"
@@ -20,7 +20,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_toLeftOf="@+id/search_user_button"
                 android:textColor="@android:color/white"
-                android:hint="@string/search_user" android:textColorHint="@color/gray_100"
+                android:hint="@string/hint_search_user" android:textColorHint="@color/gray_100"
                 android:background="@android:color/transparent"/>
 
             <ImageView

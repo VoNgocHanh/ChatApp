@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rooms_act_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/home_nav_home_action" />
+        <item
+            android:id="@+id/nav_information_act_home"
+            android:icon="@drawable/ic_information_24_dp"
+            android:title="@string/home_nav_get_info_action" />
+        <item
+            android:id="@+id/nav_reset_password_act_home"
+            android:icon="@drawable/ic_reset_password_24_dp"
+            android:title="@string/home_nav_reset_password_action" />
+        <item
+            android:id="@+id/nav_photo_profile_act_home"
+            android:icon="@drawable/ic_photo_profile_24_dp"
+            android:title="@string/home_nav_update_profile_photo_action" />
+        <item
+            android:id="@+id/nav_logout_act_home"
+            android:icon="@drawable/ic_logout_24_dp"
+            android:title="@string/home_nav_logout_action" />
+    </group>
+</menu>

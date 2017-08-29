@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_search_user">Search user by email here...</string>
+
+    <!--Navigation drawer menu labels-->
+    <string name="open_drawer">open_drawer</string>
+    <string name="close_drawer">close_drawer</string>
+    <string name="home_nav_home_action">Rooms</string>
+    <string name="home_nav_get_info_action">Information</string>
+    <string name="home_nav_reset_password_action">Reset Password</string>
+    <string name="home_nav_update_profile_photo_action">Profile Photo</string>
+    <string name="home_nav_logout_action">Logout</string>
+
+    <string name="home_act_nav_header_label_username">Your username</string>
+    <string name="home_act_nav_header_user_email">Your email</string>
+
+    <!--Toolbar -->
+    <string-array name="home_act_action_titles">
+        <item>Rooms</item>
+        <item>Information</item>
+        <item>Reset Password</item>
+        <item>Profile Photo</item>
+        <item>Logout</item>
+    </string-array>
+
+</resources>

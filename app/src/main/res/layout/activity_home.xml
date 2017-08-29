@@ -1,42 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<android.support.v4.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/drawer_layout_act_home"
     android:orientation="vertical"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context="com.vongochanh.chatapp.home.HomeActivity">
+    tools:context=".ui.home.main.HomeActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_home"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:theme="@style/ToolbarHome">
+    <include layout="@layout/main_content_act_home"
+        android:layout_width="match_parent" android:layout_height="match_parent"/>
 
-        <EditText
-            android:id="@+id/open_searchingUserAct_homeAct"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:textSize="16sp" android:textColor="@color/gray_800"
-            android:hint="@string/search_user" android:textColorHint="@color/gray_400"
-            android:background="@android:color/transparent"
-            android:drawableStart="@drawable/ic_search" android:drawablePadding="10dip"/>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_act_home"
+        android:layout_width="@dimen/act_home_nav_width" android:layout_height="match_parent"
+        android:layout_gravity="start" android:fitsSystemWindows="true"
+        app:headerLayout="@layout/activity_home_nav_header"
+        app:itemBackground="@drawable/nav_item_act_home"
+        app:menu="@menu/activity_home_nav_menu"
+        app:itemIconTint="@color/tint_color_nav_item_act_home"
+        app:itemTextColor="@color/text_color_nav_item_act_home"/>
 
-    </android.support.v7.widget.Toolbar>
-
-    <TextView
-        android:id="@+id/connect_status_homeAct"
-        android:layout_width="match_parent" android:layout_height="wrap_content"
-        android:background="@color/blue_500"
-        android:textColor="@android:color/white" android:textSize="14sp"
-        android:gravity="center_horizontal"
-        android:text="@string/connected"
-        android:visibility="gone"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/users_listview_home"
-        android:scrollbars="vertical"
-        android:layout_width="match_parent" android:layout_height="match_parent"
-        android:layout_marginTop="10dip"
-        android:animateLayoutChanges="false" android:animationCache="false"
-        android:nestedScrollingEnabled="false"/>
-
-</LinearLayout>
+</android.support.v4.widget.DrawerLayout>

@@ -3,14 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/setting_homeMenu"
+        android:id="@+id/settings_menu_item_act_home"
         app:showAsAction="never"
         android:orderInCategory="100"
 
         android:title="@string/settings" />
 
     <item
-        android:id="@+id/logout_homeMenu"
+        android:id="@+id/logout_menu_item_act_home"
         app:showAsAction="never"
         android:orderInCategory="200"
         android:title="@string/logout" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Navigation drawer nav menu-->
+    <dimen name="act_home_nav_width">320dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="photo_profile_width">75dp</dimen>
+    <dimen name="photo_profile_height">75dp</dimen>
+    <dimen name="act_home_small_margin">5dp</dimen>
+    
+    <!--Override default design navigation view-->
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+</resources>

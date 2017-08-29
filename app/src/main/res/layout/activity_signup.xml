@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@color/purple_300"
-    tools:context=".start.sign_up.SignupActivity">
+    tools:context=".ui.start.signup.SignupActivity">
 
     <LinearLayout
         android:orientation="vertical"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vongochanh.chatapp.room.list_rooms.RoomsListActivity">
+    tools:context=".ui.home.room.list_rooms.RoomsListActivity">
 
     <ListView
         android:id="@+id/roomsList"

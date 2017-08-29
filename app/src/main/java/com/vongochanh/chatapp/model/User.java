@@ -1,10 +1,10 @@
 package com.vongochanh.chatapp.model;
 
-/**
- * Created by Vo Ngoc Hanh on 8/25/2017.
- */
-
 import com.google.gson.annotations.SerializedName;
+
+/**
+ * Created by Vo Ngoc Hanh on 8/28/2017.
+ */
 
 public class User {
     @SerializedName("emailUser")

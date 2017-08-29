@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    tools:context=".start.signin.Activity"
+    tools:context=".ui.start.signin.SigninActivity"
     android:paddingTop="25dip" android:paddingBottom="25dip"
     android:background="@color/blue_400">
 
@@ -69,7 +69,7 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:layout_marginTop="10dip"
                 android:checked="false"
-                android:text="@string/Show_password"/>
+                android:text="@string/checkbox_show_password"/>
 
             <Button
                 android:id="@+id/loginButton"
@@ -77,7 +77,26 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:background="@drawable/signin_button"
                 android:textSize="18sp" android:textColor="@android:color/white"
-                android:text="@string/signin" android:gravity="center"/>
+                android:text="@string/button_signin" android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/progress_bar_activity_signin"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dip" android:visibility="gone">
+
+                <ProgressBar
+                    android:layout_width="50dip" android:layout_height="wrap_content"
+                    android:indeterminateDrawable="@drawable/custom_signin_wheel"/>
+
+                <TextView
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginStart="10dip"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white" android:textSize="18sp"
+                    android:text="@string/progressing_notice_signin"/>
+
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/signupLink"
@@ -93,7 +112,7 @@
                 android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textSize="14sp" android:textColor="@android:color/white"
-                android:text="@string/forgot_password"/>
+                android:text="@string/link_forgot_password"/>
 
         </LinearLayout>
 

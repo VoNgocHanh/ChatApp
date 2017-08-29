@@ -18,19 +18,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <receiver
-            android:name=".connection.NetworkChangeManager"
-            android:label="NetworkChangeReceiver" >
+            android:name=".utils.NetworkChangeManager"
+            android:label="NetworkChangeReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:name=".start.signin.SigninActivity"
+            android:name=".ui.start.signin.SigninActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.start.signin.forgot_password.ForgotPasswordActivity"
+            android:label="@string/link_forgot_password"
+            android:parentActivityName=".ui.start.signin.SigninActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.start.signin.SigninActivity" />
+        </activity>
+        <activity
+            android:name=".ui.start.signup.SignupActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.room.list_rooms.RoomsListActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.home.room.chat_room.ChatRoomActivity" />
+        <activity android:name=".ui.home.main.HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,30 +61,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".start.signin.forgot_password.ForgotPasswordActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/forgot_password"
-            android:parentActivityName=".start.signin.SigninActivity">
+            android:name=".ui.home.search_user.SearchingUserActivity"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ui.home.main.HomeActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".start.signin.SigninActivity" />
-        </activity>
-        <activity
-            android:name=".start.sign_up.SignupActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".room.list_rooms.RoomsListActivity"
-            android:launchMode="singleTask" />
-        <activity android:name=".room.chat_room.ChatRoomActivity" />
-
-        <activity android:name=".home.HomeActivity" />
-        <activity android:name=".home.search_user.SearchingUserActivity"
-            android:launchMode="singleTask"
-            android:parentActivityName=".home.HomeActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".home.HomeActivity" />
+                android:value=".ui.home.main.HomeActivity" />
         </activity>
     </application>
 

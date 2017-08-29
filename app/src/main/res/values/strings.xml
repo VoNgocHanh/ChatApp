@@ -25,15 +25,15 @@
     <string name="connected_by_wimax">You are connecting by wimax</string>
 
     <!--SIGNIN ACTIVITY-->
-    <string name="signin">SIGNIN</string>
+    <string name="button_signin">SIGNIN</string>
     <string name="link_signup">No account yet? Create one</string>
-    <string name="forgot_password">Forgot password?</string>
+    <string name="link_forgot_password">Forgot password?</string>
     <string name="title_activity_login">Sign in</string>
-    <string name="forgot_password_guide">Please enter your email below. We will send new password to your inbox.</string>
-    <string name="send_CAP">SEND</string>
-    <string name="Show_password">Show password</string>
+    <string name="guide_forgot_password_manual">Please enter your email below. We will send new password to your inbox.</string>
+    <string name="button_send">SEND</string>
+    <string name="checkbox_show_password">Show password</string>
+    <string name="progressing_notice_signin">Login...</string>
 
-    <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password (optional)</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -45,4 +45,7 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
